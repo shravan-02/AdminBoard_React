@@ -1,0 +1,119 @@
+.NavbarContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: fit-content;
+  background: #2d3035;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.home-section nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: fit-content;
+  background: #2d3035;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: calc(100% - 240px);
+  left: 240px;
+  z-index: 100;
+  padding: 0 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section nav {
+  left: 60px;
+  width: calc(100% - 60px);
+}
+.home-section nav .sidebar-button {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+nav .sidebar-button i {
+  font-size: 35px;
+  margin-right: 10px;
+}
+.home-section nav .search-box {
+  position: relative;
+  margin-top: 20px;
+  height: 50px;
+  max-width: 550px;
+  width: 100%;
+  margin: 20px 20px;
+}
+.nav-btn button {
+  background: none;
+  color: #bdbcbf;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #bdbcbf;
+  margin: 0 5px;
+  cursor: pointer;
+}
+nav .search-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  background: #808181;
+  border: 2px solid #808181;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 0 15px;
+}
+nav .search-box .bx-search {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 5px;
+  border-radius: 4px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  align-items: flex-start;
+  transition: all 0.4 ease;
+  cursor: pointer;
+}
+.home-section nav .profile-details {
+  display: flex;
+  align-items: center;
+  background: none;
+  color: #fff;
+  border-radius: 6px;
+  height: 50px;
+  min-width: 190px;
+  /* padding: 0 15px 0 2px; */
+}
+nav .profile-details img {
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+nav .profile-details .admin_name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0 10px;
+  /* white-space: nowrap; */
+}
+nav .profile-details i {
+  font-size: 25px;
+  color: #333;
+}
